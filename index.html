@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ferramenta de Estudos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>📚 Minha Ferramenta de Estudos</h1>
+
+  <section id="materias">
+    <h2>Matérias</h2>
+    <input type="text" id="novaMateria" placeholder="Nova matéria">
+    <button onclick="adicionarMateria()">Adicionar</button>
+    <ul id="listaMaterias"></ul>
+  </section>
+
+  <section id="tarefas">
+    <h2>Tarefas de Estudo</h2>
+    <input type="text" id="novaTarefa" placeholder="Nova tarefa">
+    <button onclick="adicionarTarefa()">Adicionar</button>
+    <ul id="listaTarefas"></ul>
+  </section>
+
+  <section id="pomodoro">
+    <h2>Temporizador</h2>
+    <div id="timer">25:00</div>
+    <button onclick="iniciarTemporizador()">Iniciar</button>
+    <button onclick="pararPomodoro()">Parar</button>
+    <button onclick="resetarPomodoro()">Resetar</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
